@@ -1,5 +1,5 @@
 <div id="layoutSidenav_nav">
-    <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+    <nav class="sb-sidenav accordion sb-sidenav-dark bg-black" id="sidenavAccordion">
         <div class="sb-sidenav-menu">
             <ul class="nav">
                 <li class="nav-item">

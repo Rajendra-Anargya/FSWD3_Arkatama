@@ -23,7 +23,7 @@
 
         <!-- Chart Card -->
         <div class="col-4 col-md-12">
-            <div class="card">
+            <div class="card ">
                 <div class="card-header">
                     <h3 class="card-title">Pendaftaran Pegawai Bulanan</h3>
                 </div>

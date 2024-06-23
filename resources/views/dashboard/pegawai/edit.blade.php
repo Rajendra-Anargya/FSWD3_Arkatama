@@ -4,7 +4,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12 mt-3">
                 <h1>Edit Data Pegawai</h1>
 
                 @if ($errors->any())
@@ -50,8 +50,9 @@
                                 Back End</option>
                         </select>
                     </div>
-
-                    <button type="submit" class="btn btn-primary">Update</button>
+                    <div class="form-group mt-3">
+                        <button type="submit" class="btn btn-primary">Update</button>
+                    </div>
                 </form>
 
             </div>

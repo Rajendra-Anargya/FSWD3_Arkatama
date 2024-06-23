@@ -13,7 +13,7 @@
         </div>
         <div class="card-body">
             <div class="table-responsive">
-                <table id="employee-table" class="table table-striped">
+                <table id="employee-table" class="table table-striped table-bordered nowrap">
                     <thead>
                         <tr>
                             <th style="text-align: center;">ID</th>
@@ -60,7 +60,7 @@
     <script>
         $(document).ready(function() {
             $('#employee-table').DataTable({
-                searching: true  // Aktifkan fitur pencarian
+                searching: true 
             });
         });
     </script>

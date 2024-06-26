@@ -18,11 +18,12 @@
                         <tr>
                             <th style="text-align: center;">ID</th>
                             <th style="text-align: center;">Nama</th>
+                            <th style="text-align: center;">Nomor Telepon</th>
                             <th style="text-align: center;">Email</th>
                             <th style="text-align: center;">Tanggal Lahir</th>
                             <th style="text-align: center;">Tanggal Masuk</th>
                             <th style="text-align: center;">Divisi</th>
-                            <th style="text-align: center;">Actions</th>
+                            <th style="text-align: center;">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -30,6 +31,7 @@
                             <tr>
                                 <td style="text-align: center;">{{ $employee->id }}</td>
                                 <td style="text-align: center;">{{ $employee->nama }}</td>
+                                <td style="text-align: center;">{{ $employee->nomor_telepon }}</td>
                                 <td style="text-align: center;">{{ $employee->email }}</td>
                                 <td style="text-align: center;">{{ \Carbon\Carbon::parse($employee->tanggal_lahir)->format('Y-m-d') }}</td>
                                 <td style="text-align: center;">{{ \Carbon\Carbon::parse($employee->tanggal_masuk)->format('Y-m-d') }}</td>
@@ -44,7 +46,7 @@
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-danger btn-sm"
-                                            onclick="return confirm('Are you sure?')">Delete</button>
+                                            onclick="return confirm('Are you sure?')">Hapus</button>
                                     </form>
                                 </td>
                             </tr>

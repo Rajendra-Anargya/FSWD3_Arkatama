@@ -26,6 +26,12 @@
                     </div>
 
                     <div class="form-group">
+                        <label for="nomor_telepon">Nomor Telepon:</label>
+                        <input type="text" id="nomor_telepon" name="nomor_telepon" class="form-control"
+                            value="{{ old('nomor_telepon') }}">
+                    </div>
+
+                    <div class="form-group">
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" class="form-control"
                             value="{{ old('email') }}">
@@ -54,7 +60,7 @@
                     </div>
 
                     <div class="form-group mt-3">
-                        <button type="submit" class="btn btn-primary">Update</button>
+                        <button type="submit" class="btn btn-primary">Tambah</button>
                     </div>
                 </form>
 

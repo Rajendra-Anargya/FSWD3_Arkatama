@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('employees', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
+            $table->string('nomor_telepon')->nullable();
             $table->string('email')->unique();
             $table->date('tanggal_lahir');
             $table->date('tanggal_masuk');

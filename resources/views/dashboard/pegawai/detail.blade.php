@@ -11,8 +11,9 @@
 
             <div class="card">
                 <div class="card-body">
-                    <h3 class="card-title">{{ $employee->nama }}</h3>
+                    <p class="card-title"><strong>Nama:</strong> {{ $employee->nama }}<p>
                     <p class="card-text"><strong>Umur:</strong> {{ $umur }} tahun</p>
+                    <p class="card-title"><strong>No. Telp:</strong> {{ $employee->nomor_telepon }}<p>
                     <p class="card-text"><strong>Email:</strong> {{ $employee->email }}</p>
                     <p class="card-text"><strong>Tanggal Lahir:</strong> {{ \Carbon\Carbon::parse($employee->tanggal_lahir)->format('Y-m-d') }}</p>
                     <p class="card-text"><strong>Tanggal Masuk:</strong> {{ \Carbon\Carbon::parse($employee->tanggal_masuk)->format('Y-m-d') }}</p>

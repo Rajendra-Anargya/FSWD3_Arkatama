@@ -28,6 +28,12 @@
                     </div>
 
                     <div class="form-group">
+                        <label for="nomor_telepon">Nomor Telepon:</label>
+                        <input type="text" id="nomor_telepon" name="nomor_telepon" class="form-control"
+                            value="{{ old('nomor_telepon') }}">
+                    </div>
+
+                    <div class="form-group">
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" class="form-control"
                             value="{{ old('email', $employee->email) }}">
@@ -42,8 +48,8 @@
                     <div class="form-group">
                         <label for="divisi">Divisi:</label>
                         <select id="divisi" name="divisi" class="form-control">
-                            <option value="ui/ux" {{ old('divisi', $employee->divisi) == 'ui/ux' ? 'selected' : '' }}>
-                                UI/UX</option>
+                            <option value="ui/ux" {{ old('divisi', $employee->divisi) == 'ui/ux' ? 'selected' : '' }}>UI/UX
+                            </option>
                             <option value="front end"
                                 {{ old('divisi', $employee->divisi) == 'front end' ? 'selected' : '' }}>Front End</option>
                             <option value="back end" {{ old('divisi', $employee->divisi) == 'back end' ? 'selected' : '' }}>
